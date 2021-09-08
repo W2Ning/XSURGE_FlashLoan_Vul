@@ -41,7 +41,6 @@ contract  test{
 
     address public constant Surge_Address = 0xE1E1Aa58983F6b8eE8E4eCD206ceA6578F036c21;
 
-    // 这里填你自己的测试地址
     address public wallet = msg.sender;
 
     uint8 public time = 0;
